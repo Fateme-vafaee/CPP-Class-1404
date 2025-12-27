@@ -8,7 +8,7 @@ int main()
 
     
 
-   
+// print stars 
     for (int i = 1; i <= countColumns; i++)
     {
        cout << "[Row : " << i << "] =>\t";
@@ -18,6 +18,18 @@ int main()
        }
        cout << endl;
     }
+//Reverse Print stars
+    for (int i = countColumns; i >= 1; i--)
+    {
+       cout << "[Row : " << i << "] =>\t";
+       for (int j = 0; j < i; j++)
+       {
+        cout << "* ";
+       }
+       cout << endl;
+    }
+
+
     
 
 
