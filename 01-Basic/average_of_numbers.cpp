@@ -16,5 +16,9 @@ int main()
         sum += number;
     }
     cout << sum / countNUmber  ;
+
+    //for wait Program to exit
+    int wait ;
+    cin >> wait;
     return 0; 
 }
