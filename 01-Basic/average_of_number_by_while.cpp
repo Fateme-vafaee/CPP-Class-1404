@@ -5,24 +5,23 @@ using namespace std;
 int main()
 {
 
-    int sum = 0;
-    int counter = 1;
-    int number = 0;
-    cout << "Please enter the " << counter << "th number : ";
+    float sum = 0.0;
+    int counter = 0;
+    float number = 0.0;
+    float average = 0.0;
+    cout << "Please enter the " << counter+1 << "th number : ";
     cin >> number;
     while (number != -1)
     {
-        cout << "Please enter the " << counter << "th number : ";
-        cin >> number;
         sum += number;
         counter++;
+        cout << "Please enter the " << counter+1 << "th number : ";
+        cin >> number;
     }
 
-    if (sum == 0)
-        cout << "No numbers were entered.";
-    else
-        cout << sum / counter;
-
+    average = sum / counter ;
+    cout << "The average is: " << average << endl;
+        
     // for wait Program to exit
     int wait;
     cin >> wait;
