@@ -3,13 +3,18 @@
 using namespace std;
 int main()
 {
-    string MainSting, ReverseString = "";
-    cout << "please enter your string";
-    getline(cin, MainSting);
-    
-    for (int i = MainSting.length() - 1; i >= 0; i--)
+    string mainString, reverseString = "";
+    cout << "Please enter your string";
+    getline(cin, mainString);
+
+    for (int i = mainString.length() - 1; i >= 0; i--)
     {
-        ReverseString += MainSting[i];
+        reverseString += mainString[i];
     }
-    cout << ReverseString;
+    cout << reverseString;
+
+    // for wait Program to exit
+    cout << "Press enter to exit..." << endl;
+    int wait;
+    cin >> wait;
 }

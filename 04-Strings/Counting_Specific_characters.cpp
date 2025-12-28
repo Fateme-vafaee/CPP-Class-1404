@@ -3,21 +3,26 @@
 using namespace std;
 int main()
 {
-    string MainSting;
-    cout << "please enter :";
-    getline(cin, MainSting);
+    string mainString;
+    cout << "Please enter main string:";
+    getline(cin, mainString);
 
+    cout << "Please enter your target :";
     char target;
-    cout << "please enter your target :";
     cin >> target;
-    
+
     int counter = 0;
-    for (int i = 0; i < MainSting.length(); i++)
+    for (int i = 0; i < mainString.length(); i++)
     {
-        if (MainSting[i] == target)
+        if (mainString[i] == target)
         {
             counter++;
         }
     }
-    cout << "your target was repeated:" << counter << "times";
+    cout << "Your target was repeated:" << counter << "times";
+
+    // for wait Program to exit
+    cout << "Press enter to exit..." << endl;
+    int wait;
+    cin >> wait;
 }
