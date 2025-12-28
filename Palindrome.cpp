@@ -3,14 +3,14 @@
 using namespace std;
 int main()
 {
-    string MainSting;
-    cout << "please enter your string:";
-    getline(cin, MainSting);
+    string mainString;
+    cout << "Please enter your string:";
+    getline(cin, mainString);
 
     bool isPal = true;
-    for (int i = 0; i < (MainSting.length() - 1) / 2; i++)
+    for (int i = 0; i < (mainString.length() - 1) / 2; i++)
     {
-        if (MainSting[i] == MainSting[(MainSting.length() - 1) - i])
+        if (mainString[i] == mainString[(mainString.length() - 1) - i])
         {
             isPal = true;
             continue;
@@ -23,10 +23,15 @@ int main()
     }
     if (isPal)
     {
-        cout << "this string is palindrome";
+        cout << "This string is palindrome";
     }
     else
     {
-        cout << "this string is not palindrome";
+        cout << "This string is not palindrome";
     }
+
+    // for wait Program to exit
+    cout << "Press enter to exit..." << endl;
+    int wait;
+    cin >> wait;
 }
