@@ -1,0 +1,47 @@
+# Compiled object files
+*.o
+*.obj
+
+# Compiled dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled static libraries
+*.a
+*.lib
+
+# Executables
+# easy to use for students, uncomment if needed
+# *.exe
+# *.out
+# *.app
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Build 
+# bin/
+build/
+Debug/
+Release/
+cmake-build-debug/
+cmake-build-release/
+
+# CMake
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.swp
+*.swo
+*~
+.tmp
