@@ -6,9 +6,8 @@ int main()
     cout << "Please enter count of Columns : " << endl;
     cin >> countColumns;
 
-    
 
-// print stars 
+    //Print stars 
     for (int i = 1; i <= countColumns; i++)
     {
        cout << "[Row : " << i << "] =>\t";
@@ -18,7 +17,8 @@ int main()
        }
        cout << endl;
     }
-//Reverse Print stars
+
+    //Reverse print stars
     for (int i = countColumns; i >= 1; i--)
     {
        cout << "[Row : " << i << "] =>\t";
