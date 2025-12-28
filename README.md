@@ -31,7 +31,6 @@ This directory contains C++ examples and exercises demonstrating the fundamental
 - **Input**: Parameters for recursive calculations
 - **Output**: Results of recursive function execution
 
----
 
 ## فارسی
 
