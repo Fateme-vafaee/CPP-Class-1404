@@ -1,32 +1,47 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int num1[2][3];
-    int num2[2][3];
-    int sum[2][3];
-    cout << "Enter elements of first matrix:\n";
-    for (int i = 0; i < 2; i++)
-        for (int j = 0; j < 3; j++)
-            cin >> num1[i][j];
+const int ROW = 2;
+const int COL = 3;
 
-    cout << "Enter elements of second matrix:\n";
-    for (int i = 0; i < 2; i++)
-        for (int j = 0; j < 3; j++)
-            cin >> num2[i][j];
+void inputMatrix(int a[ROW][COL]) {
+    for (int i = 0; i < ROW; i++)
+        for (int j = 0; j < COL; j++)
+            cin >> a[i][j];
+}
 
-    for (int i = 0; i < 2; i++)
-        for (int j = 0; j < 3; j++)
-            sum[i][j] = num1[i][j] + num2[i][j];
+void addMatrix(int a[ROW][COL], int b[ROW][COL], int result[ROW][COL]) {
+    for (int i = 0; i < ROW; i++)
+        for (int j = 0; j < COL; j++)
+            result[i][j] = a[i][j] + b[i][j];
+}
 
-    cout << "Sum matrix:\n";
-    for (int i = 0; i < 2; i++) {
-        for (int j = 0; j < 3; j++)
-            cout << sum[i][j] << " ";
+void printMatrix(int a[ROW][COL]) {
+    for (int i = 0; i < ROW; i++) {
+        for (int j = 0; j < COL; j++)
+            cout << a[i][j] << " ";
         cout << endl;
     }
-      // for wait Program to exit
-    int wait;
-    cin >> wait;
-    return 0;
 }
+
+int main() {
+    int num1[ROW][COL];
+    int num2[ROW][COL];
+    int sum[ROW][COL];
+
+    cout << "Enter elements of first matrix:\n";
+    inputMatrix(num1);
+
+    cout << "Enter elements of second matrix:\n";
+    inputMatrix(num2);
+
+    addMatrix(num1, num2, sum);
+
+    cout << "Sum matrix:\n";
+    printMatrix(sum);
+	 // for wait Program to exit 
+	int wait;
+	cin >> wait;
+	return 0;
+}
+
