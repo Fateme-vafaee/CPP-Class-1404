@@ -17,4 +17,9 @@ int main()
     {
         cout << word;
     }
+
+    // for wait Program to exit
+    cout << "Press enter to exit..." << endl;
+    int wait;
+    cin >> wait;
 }

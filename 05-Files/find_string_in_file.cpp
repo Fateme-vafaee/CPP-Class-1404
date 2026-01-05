@@ -27,4 +27,9 @@ int main()
     {
         cout << "not found";
     }
+    
+    // for wait Program to exit
+    cout << "Press enter to exit..." << endl;
+    int wait;
+    cin >> wait;
 }
