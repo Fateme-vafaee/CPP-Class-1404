@@ -106,7 +106,7 @@ public:
 
 int main()
 {
-    cout << "-------Sample Info-------" << endl;
+    cout << "-------Sample Info----" << endl;
 
     // create an object of Sample class
     //  ایجاد یک شی از کلاس Sample
