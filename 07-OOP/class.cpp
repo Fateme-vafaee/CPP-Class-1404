@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-
-
+/// @brief A sample class demonstrating access specifiers in C++
+/// @details این یک کلاس نمونه است که مشخص‌کننده‌های دسترسی را نشان می‌دهد
 class Sample
 {
 private:
