@@ -8,7 +8,7 @@ int main()
     ofstream newFile;
 
     // make a new file in case of not existence
-    newFile.open("./Text-Files/register_scores.txt");
+    newFile.open("./register_scores.txt");
     string subject;
     int score = 0;
 
@@ -16,12 +16,9 @@ int main()
     while (score != -1)
     {
         cout << "Please enter the subject ";
-        getline(cin, subject);
+        cin >> subject;
         cout << "Please enter the score ";
         cin >> score;
-
-        // clear the input buffer (remove leftover newline)
-        cin.ignore();
 
         if (score != -1)
         {
